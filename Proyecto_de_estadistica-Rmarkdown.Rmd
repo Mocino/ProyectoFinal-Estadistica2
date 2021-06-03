@@ -519,7 +519,7 @@ cor(Banco$year,Banco$interest_rate)
 # si, si hay dependencia en los interes mientras transcuren los años
 # Se rechaza la hipotesis nula
 
-#---aclaracion---# 
+# ---aclaracion---# 
 #En el video dije que "cor" era el pvalue
 #pero en realidad no es asi, son cosas diferentes 
 #El cor, si esta mas cerca del 1 significa que hay relacion/dependencia con los elementos
@@ -555,7 +555,7 @@ cor(Banco$year,Banco$loan_amount)
 #pero en realidad no es asi, son cosas diferentes 
 #El cor, si esta mas cerca del 1 significa que hay relacion/dependencia con los elementos
 
-#---analisis---#
+# ---analisis---#
 #Si hay dependecia en los datos, el tiempo es un factor el cual hace que el monto siga incrementando por el tiempo
 ```
 # No.21
