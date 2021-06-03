@@ -1,6 +1,7 @@
 
-Los links de los data sets
+Los links de los data sets:
 Banco:      https://www.kaggle.com/mrferozi/loan-data-for-dummy-bank
+
 Facebook:   https://www.kaggle.com/sheenabatra/facebook-data
 
 # ProyectoFinal-Estadistica2
