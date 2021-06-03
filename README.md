@@ -532,11 +532,15 @@ Banco <- read.csv("Banco")
     
     #Metodo = Correlacion
     cor(Banco$year,Banco$interest_rate)
-    -0.06363243<0.05
+    -0.06363243
 
 #la correlacion nos da un resultado de -0.06363243
 #si, si hay dependencia en los interes mientras transcuren los aÃ±os
 # Se rechaza la hipotesis nula
+
+#---aclaracion---#
+#En el video dije que "cor" era el pvalue, pero en realidad no es asi, son cosas diferentes
+#El cor como si esta mas cerca del 1 significa que hay relacion con los elementos
 
 #---analisis---#
 
@@ -544,6 +548,7 @@ Banco <- read.csv("Banco")
 #Considero que hay dependencia entre el interÃ©s y los aÃ±os que pasen, considero que es por la popularidad y la demanda que cada aÃ±o tiene un banco
 #âUna de las principales razones de cambios en las tasas de interÃ©s es por la demanda y oferta de crÃ©dito en el mercado.â
 #Fuente: https://www.afipopular.com.do/app/do/consejo_experto.aspx?id=10545
+
 
 #--------------------------------------------------------------------------------------------------------------------------------#
 # No.20
@@ -562,14 +567,18 @@ Banco <- read.csv("Banco")
     
     #Metodo = Correlacion
     cor(Banco$year,Banco$loan_amount)
-    0.1037222<0.05
+    0.1037222
 
 #la correlacion nos da un resultado de 0.1037222
 #significa que si hay una gran relacion entre monto del prestamo y aÃ±os
-#no Se rechaza la hipotesis nula
+#Se rechaza la hipotesis nula
+
+#---aclaracion---#
+#En el video dije que "cor" era el pvalue, pero en realidad no es asi, son cosas diferentes
+#El cor como si esta mas cerca del 1 significa que hay relacion con los elementos
 
 #---analisis---#
-#No, no hay relaciÃ³n del monto de prÃ©stamo con los aÃ±os, considero mas que es un factor externo, como con el ente o sociedad que se asociÃ³ o la economÃ­a del paÃ­s
+#Si hay dependecia en los datos, el tiempo es un factor el cual hace que el monto siga incrementando con el tiempo
 
 #--------------------------------------------------------------------------------------------------------------------------------#
 # No.21
