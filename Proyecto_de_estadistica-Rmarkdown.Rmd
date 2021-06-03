@@ -513,11 +513,16 @@ abline(YL,col ="dark green")
 
 #Metodo = Correlacion
 cor(Banco$year,Banco$interest_rate)
--0.06363243<0.05
+-0.06363243
 
 # la correlacion nos da un resultado de -0.06363243
 # si, si hay dependencia en los interes mientras transcuren los años
 # Se rechaza la hipotesis nula
+
+#---aclaracion---# 
+#En el video dije que "cor" era el pvalue
+#pero en realidad no es asi, son cosas diferentes 
+#El cor, si esta mas cerca del 1 significa que hay relacion/dependencia con los elementos
 
 #---analisis---#
 
@@ -525,7 +530,7 @@ cor(Banco$year,Banco$interest_rate)
 ```
 # No.20
 ```{r warning=FALSE}
-#¿ hay independencia en el monto del prestamo con los años que pasen
+#¿ hay independencia en el monto del prestamo con los años que pasen?
 
 #h0=las variables son independientes, el monto del prestamo no depende  con los años
 #h1=las variables NO son independientes, el monto del prestamo depende  con los años 
@@ -539,15 +544,19 @@ abline(LY,col ="blue")
 
 #Metodo = Correlacion
 cor(Banco$year,Banco$loan_amount)
-0.1037222<0.05
+0.1037222
 
-# la correlacion nos da un resultado de 0.1037222
-# significa que si hay una gran relacion entre monto del prestamo y años
-# no Se rechaza la hipotesis nula
+#La correlacion nos da un resultado de 0.1037222
+#significa que si hay una gran relacion/dependencia, si, si dependen entre monto del prestamo y los años
+#Se rechaza la hipotesis nula
+
+# ---aclaracion---# 
+#En el video dije que "cor" era el pvalue
+#pero en realidad no es asi, son cosas diferentes 
+#El cor, si esta mas cerca del 1 significa que hay relacion/dependencia con los elementos
 
 #---analisis---#
-#No, no hay relación del monto de préstamo con los años, considero mas que es un factor externo, como con el ente o sociedad que se asoció o la economía del paí
-
+#Si hay dependecia en los datos, el tiempo es un factor el cual hace que el monto siga incrementando por el tiempo
 ```
 # No.21
 ```{r warning=FALSE}
